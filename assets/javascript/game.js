@@ -18,3 +18,8 @@ for (var i = 1; i < 13; i++) {
     crystalNumber.push(i);
 }
 
+//random numbers for the user to see. 
+var number = computerNumber[Math.floor(Math.random ()* computerNumber.length)];
+var crystal = crystalNumber[Math.floor(Math.random ()* crystalNumber.length)];
+
+
