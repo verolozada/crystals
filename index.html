@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
 </head>
+
 <body>
-    <h2 id = "number"></h2>
 
-      <!-- jQuery -->
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        #c1-button {
+            background: blue;
+            height: 100px;
+            width: 100px;
+        }
 
-      <!-- Script -->
-      <script type="text/javascript" src="assets/javascript/game.js"></script>  
+        #c2-button {
+            background: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        #c3-button {
+            background: green;
+            height: 100px;
+            width: 100px;
+        }
+
+        #c4-button {
+            background: orange;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+
+    <div>
+        <h2 id="number"></h2>
+    </div>
+
+    <div>
+        <button class="button" id="c1-button"></button>
+        <button class="button" id="c2-button"></button>
+        <button class="button" id="c3-button"></button>
+        <button class="button" id="c4-button"></button>
+    </div>
+
+    <div>
+        <h3 id="cvalue"></h3>
+    </div>
+
+    <div>
+        <h1 id="wins">Wins: </h1>
+        <h1 id="losses">Losses: </h1>
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
