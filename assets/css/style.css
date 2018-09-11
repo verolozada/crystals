@@ -1,0 +1,61 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url("../images/ep_naturalblack.png")
+}
+
+header{
+background: #15A8D5;
+height: 70px;
+text-align: center;
+padding: 15px;
+font-family: "Amaranth";
+font-size: 34px;
+margin-bottom: 30px;
+color: white;
+}
+
+img {
+    width: auto;
+    height: 100px;
+    text-decoration: none;
+    background: black;
+}
+
+#buttons {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    background: black;
+    width: 50%;
+    border: 1px solid #15A8D5;
+    border-radius: 25px;
+}
+
+.button {
+    border-color: black;
+    background: black;
+}
+
+h2, h3 {
+    color: white;
+    font-family: "Fredoka One";
+}
+
+#number, #cvalue, #wins, #losses{
+font-size: 25px;
+background:#15A8D5;
+width: 25%;
+text-align: center;
+margin: 0 auto;
+margin-top: 40px;
+margin-bottom: 30px;
+border-radius: 25px;
+height: 50px;
+padding: 12px;
+align-content: center;
+}
+

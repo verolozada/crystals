@@ -39,7 +39,7 @@ function reset() {
     crystal3 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
     crystal4 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
     cnumber = 0;
-    $("#cvalue").html(cnumber);
+    $("#cvalue").html("Your score is: " + cnumber);
 };
 
 function win() {
@@ -81,7 +81,7 @@ function count() {
         console.log(num);
         cnumber = cnumber + num;
         // console.log(cnumber);
-        $("#cvalue").html(cnumber);
+        $("#cvalue").html("Your score is: " + cnumber);
 
         if (cnumber === number) {
             win();    
