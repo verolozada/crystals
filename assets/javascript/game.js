@@ -34,7 +34,9 @@ function reset() {
     crystal3 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
     crystal4 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
     cnumber = 0;
-    $("#cvalue").html("Your score is: " + cnumber);
+    $("#cvalue").html("Your score is: ");
+    // $(document).off("keyup", reset);
+    // empty out children
 };
 
 function picture(src, height, width, alt) {
@@ -44,7 +46,7 @@ function picture(src, height, width, alt) {
     img.width = width;
     img.alt = alt;
     
-    return document.getElementById("cvalue").append(img);
+    return document.getElementById("cvalue").appendChild(img);
   }
 
 function win() {
@@ -89,10 +91,10 @@ function count() {
         $("#cvalue").html("Your score is: " + cnumber);
 
         if (cnumber === number) {
-            // picture(images[0], 300, 200, win);
+            // picture(images[0], 300, 200, "win");
             win();    
         } else if (cnumber > number) {
-            // picture(images[1], 300, 200, gameOver);
+            // picture(images[1], 300, 200, "gameOver");
             lose();
         } 
     });  
