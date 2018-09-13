@@ -39,15 +39,15 @@ function reset() {
     // empty out children
 };
 
-function picture(src, height, width, alt) {
-    var img = document.createElement("img");
-    img.src = src;
-    img.height = height;
-    img.width = width;
-    img.alt = alt;
+// function picture(src, height, width, alt) {
+//     var img = document.createElement("img");
+//     img.src = src;
+//     img.height = height;
+//     img.width = width;
+//     img.alt = alt;
     
-    return document.getElementById("cvalue").appendChild(img);
-  }
+//     return document.getElementById("cvalue").appendChild(img);
+//   }
 
 function win() {
     wins++;
