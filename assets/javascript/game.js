@@ -35,19 +35,9 @@ function reset() {
     crystal4 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
     cnumber = 0;
     $("#cvalue").html("Your score is: ");
-    // $(document).off("keyup", reset);
-    // empty out children
 };
 
-// function picture(src, height, width, alt) {
-//     var img = document.createElement("img");
-//     img.src = src;
-//     img.height = height;
-//     img.width = width;
-//     img.alt = alt;
-    
-//     return document.getElementById("cvalue").appendChild(img);
-//   }
+
 
 function win() {
     wins++;
