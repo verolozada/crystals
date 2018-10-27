@@ -1,30 +1,31 @@
 // variables to keep score
-var wins = 0;
-var losses = 0;
+let wins = 0;
+let losses = 0;
 
 //images
-var images = ["assets/images/win.jpg","assets/images/Game_Over.jpg" ];
+const images = ["assets/images/win.jpg","assets/images/Game_Over.jpg" ];
 
-//set of numbers  for the computer to choose
-var computerNumber = [];
+//set of numbers  for the computer to choose, between 19 and 120
+let computerNumber = [];
 for (var i = 19; i < 121; i++) {
     computerNumber.push(i);
 }
 
-//possible values for the crystals
-var crystalNumber = [];
+//possible values for the crystals between 1 and 12
+let crystalNumber = [];
 for (var i = 1; i < 13; i++) {
     crystalNumber.push(i);
 }
 
 //random numbers for the user to see. 
-var number = computerNumber[Math.floor(Math.random() * computerNumber.length)];
-var crystal1 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
-var crystal2 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
-var crystal3 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
-var crystal4 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
+let number = computerNumber[Math.floor(Math.random() * computerNumber.length)];
+let crystal1 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
+let crystal2 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
+let crystal3 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
+let crystal4 = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
+
 // variable to hold the sum of the crystals values
-var cnumber = 0;
+let cnumber = 0;
 
 function reset() {
     number = computerNumber[Math.floor(Math.random() * computerNumber.length)];
